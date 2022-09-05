@@ -1,0 +1,25 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.calcContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnContainer,
+.display {
+    width: 240px;
+}
+
+.display {
+    text-align: right;
+}
+
+button {
+    width: 50px;
+    padding: 5px;
+    margin: 2px;
+}
