@@ -9,10 +9,15 @@ function buttonAction (e) {
 }
 
 function operate (equation) {
-    
+    equationArr = equation.split(" ");
+
+    //while loop until array has 1 value
+    //look for operators and replace operators and adjacent ints with result
+        //prioritize * and / then +  and -
+
 }
 
-const regexpInts = /[\+\-\*\/\%]/ig
+const regexpInts = /[\+\-\*\/\%]/ig;
 
 let buttons = document.querySelectorAll("button");
 let display = document.querySelector(".display");
