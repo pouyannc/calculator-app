@@ -1,7 +1,13 @@
 function buttonAction (e) {
     console.log(e.target.textContent)
     const btnValue = e.target.textContent;
-    if (btnValue == "AC") display.textContent = "0";
+    if (btnValue == "CLEAR") display.textContent = "0";
+    else if (btnValue == "DELETE") {
+        const displayArr = display.textContent.split("");
+        if (displayArr[displayArr.length-1] == " ") displayArr.splice(displayArr.length-3,3);
+        else displayArr.pop();
+        display.textContent = displayArr.join("");
+    }
     else if (btnValue == "=") {
         let answer = evaluate(display.textContent.split(" "));
         displayAns.textContent = answer;

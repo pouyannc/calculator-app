@@ -10,16 +10,27 @@
 }
 
 .btnContainer,
-.display {
+.display,
+.displayAns {
     width: 240px;
 }
 
-.display {
+.display, 
+.displayAns {
     text-align: right;
+    margin-right: 20px;
+}
+
+.displayAns {
+    font-size: 28px;
 }
 
 button {
     width: 50px;
     padding: 5px;
     margin: 2px;
+}
+
+.row1Btns button {
+    width: 109px;
 }
